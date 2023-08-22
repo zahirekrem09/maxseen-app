@@ -167,7 +167,7 @@ export const UserForm: React.FC<UserFormProps> = ({ initialData, setShowNewUserD
                 <FormDescription>Select the user role for the dashboard.</FormDescription>
                 <FormMessage />
                 <RadioGroup
-                  onValueChange={field?.onChange}
+                  onValueChange={() => field?.onChange}
                   defaultValue={field?.value}
                   className="grid max-w-md grid-cols-2 gap-8 pt-2"
                 >
