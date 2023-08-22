@@ -55,7 +55,7 @@ export const PaymentMethod: React.FC<PaymentMethodProps> = ({ orderId, setOpen }
       setLoading(true)
       const res = await axios.post<Order>(`/api/admin/payment`, data)
       if (res.status === 200) {
-        router.replace(`/payment/${orderId}?success=${res.data.transId}`)
+        router.replace(`/payment/success?success=${res.data.transId}`)
         router.refresh()
       }
     } catch (error: any) {
