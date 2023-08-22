@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
-    "email:dev": "email dev"
+    "email:dev": "email dev",
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
