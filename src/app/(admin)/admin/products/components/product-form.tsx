@@ -74,7 +74,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
       if (initialData) {
         await axios.patch(`/api/admin/products/${params.productId}`, data)
       } else {
-        await axios.post(`/api/admin/productss`, data)
+        await axios.post(`/api/admin/products`, data)
       }
       router.refresh()
       router.push(`/admin/products`)
