@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE `Order` ADD COLUMN `accountNumber` VARCHAR(191) NULL,
+    ADD COLUMN `accountType` VARCHAR(191) NULL,
+    ADD COLUMN `authCode` VARCHAR(191) NULL,
+    ADD COLUMN `transId` VARCHAR(191) NULL;
