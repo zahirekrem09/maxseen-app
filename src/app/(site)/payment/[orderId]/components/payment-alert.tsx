@@ -12,7 +12,7 @@ const PaymentAlert = ({ transId }: { transId: string }) => {
   return (
     <Card>
       <CardContent>
-        <div className="bg-white p-6  md:mx-auto">
+        <div className="bg-background  p-6 md:mx-auto">
           <svg viewBox="0 0 24 24" className="mx-auto my-6 h-16 w-16 text-green-600">
             <path
               fill="currentColor"
