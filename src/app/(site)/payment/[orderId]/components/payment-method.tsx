@@ -55,16 +55,16 @@ export const PaymentMethod: React.FC<PaymentMethodProps> = ({ orderId, setOpen }
       setLoading(true)
       const res = await axios.post<Order>(`/api/admin/payment`, data)
       if (res.status === 200) {
-        router.replace(`/payment/success?success=${res.data.transId}`)
+        router.replace(`/success?success=${res.data.transId}`)
         router.refresh()
       }
     } catch (error: any) {
       if (error instanceof AxiosError) {
         return toast.error(error?.response?.data.response.descr ?? 'Something went wrong.')
       }
-      return toast.error('Something went wrong.')
+      toast.error('Something went wrong.')
 
-      // router.replace(`/payment/${orderId}?canceled=1`)
+      return router.replace(`/cancel?canceled=1`)
     } finally {
       setLoading(false)
     }

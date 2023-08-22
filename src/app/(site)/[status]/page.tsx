@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import PaymentAlert from '../[orderId]/components/payment-alert'
+import PaymentAlert from '../payment/[orderId]/components/payment-alert'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib'
 
