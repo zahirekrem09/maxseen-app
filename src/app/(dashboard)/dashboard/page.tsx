@@ -138,9 +138,7 @@ export default async function DashboardPage() {
                     <CardHeader>
                       <CardTitle>Overview</CardTitle>
                     </CardHeader>
-                    <CardContent className="pl-2">
-                      <Overview />
-                    </CardContent>
+                    <CardContent className="pl-2">{/* <Overview /> */}</CardContent>
                   </Card>
                 </div>
               </TabsContent>
